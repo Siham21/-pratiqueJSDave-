@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+<body>
+    <header>
+        <h1>CALCULATRICE</h1>
+    </header>
+    <section class="section1">
+        <div class="div1"> 
+            <img src="asset/img/square.png" alt="Square">
+            <h2>Carre</h2>
+            <h3>Calcul du perimètre et l'air du carre </h3>
+         
+                <label for="sideSquare">
+                    entre les mesures d'un côté
+                </label><br>
+                <input type="number" id="sideSquare" /><br>
+                <button type="submit"onclick="perimeterButtonSquare()">Perimètre</button><br>
+                <button onclick="airButtonSquare()">Air</button><br>
+                <p id="resultatSquare"></p>
+
+         
+
+        </div>
+        <div class="div2">
+            <img src="asset/img/triangle.png" alt="triangle">
+            <h2>Triangle</h2>
+            <h3>Calcul du perimètre et l'air du triangle </h3>
+           
+                <label for="sideTriangle1">
+                    Entre les mesures du côté1
+                </label><br>
+                <input type="number" id="sideTriangle1" /><br>
+
+                <label for="sideTriangle2">
+                    Entre les mesures du côté2
+                </label><br>
+                <input type="number" id="sideTriangle2" /><br>
+
+                <label for="sideTriangle3">
+                    Entre les mesures du côté3
+                </label><br>
+                <input type="number" id="sideTriangle3" /><br>
+                
+                <button onclick="perimeterButtonTriangle()">Perimètre</button><br>
+                <button onclick="airButtonTriangle()">Air</button><br>
+                <p id="resultatTriangle"></p>
+
+                
+          
+         </div>
+    </section>
+    
+</body>
+<script src="./index.js"></script>
+</html>
