@@ -16,15 +16,18 @@
         <div class="div1"> 
             <img src="asset/img/square.png" alt="Square">
             <h2>Carre</h2>
-            <h3>Calcul du perimètre et l'air du carre </h3>
+            <h3>Calcul du périmètre et l'air du carre </h3>
          
                 <label for="sideSquare">
                     entre les mesures d'un côté
                 </label><br>
-                <input type="number" id="sideSquare" /><br>
+                <input type="number" id="sideSquare" /><br> 
+                <!-- input sert à inserer l'encadrer et lui donner un type d'entréé, string,number... -->
                 <button type="submit"onclick="perimeterButtonSquare()">Perimètre</button><br>
+
                 <button onclick="airButtonSquare()">Air</button><br>
                 <p id="resultatSquare"></p>
+                <p id="resultatSquare1"></p>
 
          
 
@@ -32,12 +35,12 @@
         <div class="div2">
             <img src="asset/img/triangle.png" alt="triangle">
             <h2>Triangle</h2>
-            <h3>Calcul du perimètre et l'air du triangle </h3>
+            <h3>Calcul du périmètre et l'air du triangle </h3>
            
-                <label for="sideTriangle1">
-                    Entre les mesures du côté1
+                <label for="sideTriangleBase1">
+                    Entre les mesures de la base du triangle 
                 </label><br>
-                <input type="number" id="sideTriangle1" /><br>
+                <input type="number" id="sideTriangleBase1" /><br>
 
                 <label for="sideTriangle2">
                     Entre les mesures du côté2
@@ -48,10 +51,17 @@
                     Entre les mesures du côté3
                 </label><br>
                 <input type="number" id="sideTriangle3" /><br>
+
+                <label for="hauteurTriangle">
+                    Entre la hauteur du triangle
+                </label><br>
+                <input type="number" id="hauteurTriangle" /><br>
                 
                 <button onclick="perimeterButtonTriangle()">Perimètre</button><br>
-                <button onclick="airButtonTriangle()">Air</button><br>
-                <p id="resultatTriangle"></p>
+                <button onclick="airButtonTriangle()"> Air</button>
+                <p id="resultatTriangle1"></p>
+                <p id="resultatTriangle2"></p>
+
 
                 
           
